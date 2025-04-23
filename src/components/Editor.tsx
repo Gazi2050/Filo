@@ -13,6 +13,10 @@ const Editor = () => {
       }
     },
   });
+
+  editor.onSelectionChange((data) => {
+    console.log(data);
+  });
   return (
     <div className="w-full md:w-[70%] mx-auto mt-20">
       <BlockNoteView editor={editor} data-theming-css-demo />
