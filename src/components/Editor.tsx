@@ -14,7 +14,7 @@ const Editor = () => {
     },
   });
   return (
-    <div className="w-[70%] mx-auto">
+    <div className="w-full md:w-[70%] mx-auto mt-20">
       <BlockNoteView editor={editor} data-theming-css-demo />
     </div>
   );
