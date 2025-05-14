@@ -9,8 +9,8 @@ const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <nav className="w-full fixed top-0 left-0 z-50 bg-white shadow-sm">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav className="w-full fixed top-0 left-0 z-50 bg-white border-b border-gray-300">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-3 py-1">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
                     <Link href='/' className="flex items-center gap-2">
@@ -31,15 +31,15 @@ const Navbar = () => {
                     <div className="hidden lg:flex gap-2">
                         <Link
                             href="/signin"
-                            className="border border-gray-300 text-gray-800 hover:bg-gray-100 font-medium px-4 py-1.5 rounded-md text-sm transition"
+                            className="border border-gray-300 text-gray-800 hover:bg-gray-100 font-medium px-4 py-2 rounded-md text-sm transition"
                         >
-                            Sign In
+                            Sign in
                         </Link>
                         <Link
                             href="/signup"
-                            className="bg-black text-white font-medium px-4 py-1.5 rounded-md text-sm hover:bg-gray-900 transition"
+                            className="bg-black text-white font-medium px-4 py-2 rounded-md text-sm hover:bg-gray-900 transition"
                         >
-                            Sign Up Free
+                            Sign up free
                         </Link>
                     </div>
 

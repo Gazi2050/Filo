@@ -36,7 +36,7 @@ const features = [
 
 const Features = () => {
     return (
-        <section className="px-4 mt-40 max-w-[1200px] mx-auto text-center">
+        <section className="px-4 mt-40 max-w-7xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-serif mb-4">
                 Everything you need to stay organized
             </h2>
@@ -44,7 +44,7 @@ const Features = () => {
                 Filo combines personal task management with team collaboration and motivation.
             </p>
 
-            <div className="grid grid-cols-1 gap-6 max-w-5xl mx-auto md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-6 mx-auto md:grid-cols-2 lg:grid-cols-3">
                 {features.map((feature, index) => (
                     <div
                         key={index}

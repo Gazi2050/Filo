@@ -3,7 +3,7 @@ import { IoArrowForward } from "react-icons/io5";
 
 const Hero = () => {
     return (
-        <section className="mt-32 px-4 text-center max-w-[90%] md:max-w-4xl lg:max-w-5xl mx-auto">
+        <section className="mt-32 px-4 text-center max-w-7xl md:max-w-4xl lg:max-w-5xl mx-auto">
             <h1 className="text-[2.25rem] md:text-[3rem] lg:text-[3.75rem] font-serif leading-tight text-black mb-6">
                 Manage tasks, collaborate, and<br className="hidden md:block" /> track progress with Filo
             </h1>
