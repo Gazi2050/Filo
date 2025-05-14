@@ -6,22 +6,19 @@ const Review = () => {
             profile: "M",
             name: "Maria Johnson",
             jobTitle: "Product Manager",
-            description:
-                "Filo has completely changed how our team collaborates. The points system adds a fun competitive element that keeps everyone engaged. It's boosted morale and focus."
+            description: "Filo has completely changed how our team collaborates. The points system adds a fun competitive element that keeps everyone engaged."
         },
         {
             profile: "J",
             name: "James Chen",
             jobTitle: "Software Developer",
-            description:
-                "I use Filo for both personal tasks and team projects. Being able to separate workspaces but use the same familiar interface is incredibly helpful. It's efficient and smooth."
+            description: "I use Filo for both personal tasks and team projects. Being able to separate workspaces but use the same familiar interface is incredibly helpful."
         },
         {
             profile: "S",
             name: "Sarah Williams",
             jobTitle: "Freelance Designer",
-            description:
-                "The visual task board makes it so easy to see where everything stands. I love watching tasks move from Todo all the way to Done. It feels very intuitive and fun."
+            description: "The visual task board makes it so easy to see where everything stands. I love watching tasks move from Todo all the way to Done."
         },
     ];
 
@@ -40,15 +37,15 @@ const Review = () => {
                         key={index}
                         className="bg-neutral-50 border border-gray-200 rounded-xl p-5 flex flex-col justify-between h-full"
                     >
-                        <p className="text-gray-800 text-[15px] leading-relaxed mb-6 flex-grow">
+                        <p className="text-gray-600 font-medium text-[16px] leading-relaxed mb-3 flex-grow italic">
                             “{review.description}”
                         </p>
                         <div className="flex items-center gap-4 mt-6">
-                            <div className="bg-gray-200 text-gray-400 font-bold rounded-full w-10 h-10 flex items-center justify-center text-[15px]">
+                            <div className="bg-gray-200/70 text-gray-500 font-bold rounded-full w-10 h-10 flex items-center justify-center text-[15px]">
                                 {review.profile}
                             </div>
                             <div>
-                                <h3 className="text-sm font-semibold text-gray-900">
+                                <h3 className="text-[16px] font-semibold text-gray-900">
                                     {review.name}
                                 </h3>
                                 <p className="text-sm text-gray-500">{review.jobTitle}</p>
