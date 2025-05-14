@@ -1,3 +1,4 @@
+
 export const middleLinks = [
     { label: "Features", href: "/" },
     { label: "How it works", href: "/" },

@@ -1,6 +1,6 @@
 'use client';
 
-import { middleLinks, rightLinks } from "@/Constants/data";
+import { middleLinks, rightLinks } from "@/constants/data";
 import Link from "next/link";
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
