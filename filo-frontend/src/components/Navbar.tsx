@@ -31,13 +31,13 @@ const Navbar = () => {
                     <div className="hidden lg:flex gap-2">
                         <Link
                             href="/signin"
-                            className="border border-gray-300 text-gray-800 hover:bg-gray-100 font-medium px-4 py-2 rounded-md text-sm transition"
+                            className="border border-gray-300 text-gray-800 hover:bg-gray-100 font-medium px-4 py-2 rounded-md text-sm transition duration-300"
                         >
                             Sign in
                         </Link>
                         <Link
                             href="/signup"
-                            className="bg-black text-white font-medium px-4 py-2 rounded-md text-sm hover:bg-gray-900 transition"
+                            className="bg-black text-white font-medium px-4 py-2 rounded-md text-sm hover:bg-slate-800 duration-300 transition"
                         >
                             Sign up free
                         </Link>

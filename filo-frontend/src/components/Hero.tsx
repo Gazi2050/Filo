@@ -14,13 +14,13 @@ const Hero = () => {
             <div className="flex flex-col gap-4 w-full max-w-md mx-auto md:flex-row md:justify-center">
                 <Link
                     href="/"
-                    className="w-full md:w-auto border bg-black hover:bg-gray-900 text-white border-gray-300 text-sm font-medium px-6 py-3 rounded-full transition flex items-center justify-center gap-2"
+                    className="w-full md:w-auto border bg-black hover:bg-slate-800 text-white border-gray-300 text-sm font-medium px-6 py-3 rounded-full transition flex items-center justify-center gap-2 duration-300"
                 >
                     Get started for free
                 </Link>
                 <Link
                     href="/"
-                    className="w-full md:w-auto border border-gray-300 text-sm font-medium text-black px-6 py-3 rounded-full hover:bg-gray-100 transition flex items-center justify-center gap-2"
+                    className="w-full md:w-auto border border-gray-300 text-sm font-medium text-black px-6 py-3 rounded-full hover:bg-gray-100 transition flex items-center justify-center gap-2 duration-300"
                 >
                     See how it works
                     <span className="text-xl">
