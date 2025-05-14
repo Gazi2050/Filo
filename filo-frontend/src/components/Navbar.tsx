@@ -1,23 +1,12 @@
 'use client';
 
+import { middleLinks, rightLinks } from "@/Constants/data";
 import Link from "next/link";
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-
-    const middleLinks = [
-        { label: "Features", href: "/" },
-        { label: "How it works", href: "/" },
-        { label: "Workspaces", href: "/" },
-    ];
-
-    const rightLinks = [
-        { label: "Sign In", href: "/signin" },
-        { label: "Sign Up", href: "/signup" },
-    ];
-
 
     return (
         <nav className="w-full fixed top-0 left-0 z-50 bg-white shadow-sm">
