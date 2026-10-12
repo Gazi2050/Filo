@@ -1,6 +1,6 @@
 # Filebase
 
-Local-first workspace explorer and notebook. Files and folders are stored in the browser using Dexie and IndexedDB, with no backend or account required.
+An AI-powered workspace for creating rich documents, organizing files, and collaborating in real time with a WYSIWYG editor. **Currently under active development.**
 
 ## How to run the project
 
@@ -124,7 +124,7 @@ This separation keeps metadata queries lightweight. Rendering the tree, navigati
 
 ## Important implementation decisions
 
-- Shared inline input: The sidebar tree and folder card views share the exact same `InlineNameInput` component. Reusing a single input prevents blur-event race conditions between the tree and the main panel, while keeping validation (empty string checks and case-insensitive sibling name collisions) in one place.
-- Navigation autosave and dirty tracking: Edits set `isDirty` instantly. Instead of discarding unsaved edits when a user clicks around the tree, `flushDirtySave` runs before changing the active file. A `beforeunload` window listener blocks accidental tab closure while `isDirty` is true.
-- Cascading delete transactions: Deleting a folder gathers all descendant folder and file IDs using a breadth-first queue over `parentId`. It then deletes all matching rows from both `items` and `contents` inside a single Dexie read-write transaction. If the active file was inside the deleted branch, the editor resets cleanly and navigates to the nearest surviving parent.
-- Single-flight initialization: React 19 StrictMode runs mount effects twice during development. A module-level `initPromise` variable in `use-workspace-store.ts` caches the initial database seed, preventing duplicate `bulkAdd` calls from throwing errors on initial load.
+- **Shared inline input:** The sidebar tree and folder card views share the exact same `InlineNameInput` component. Reusing a single input prevents blur-event race conditions between the tree and the main panel, while keeping validation (empty string checks and case-insensitive sibling name collisions) in one place.
+- **Navigation autosave and dirty tracking:** Edits set `isDirty` instantly. Instead of discarding unsaved edits when a user clicks around the tree, `flushDirtySave` runs before changing the active file. A `beforeunload` window listener blocks accidental tab closure while `isDirty` is true.
+- **Cascading delete transactions:** Deleting a folder gathers all descendant folder and file IDs using a breadth-first queue over `parentId`. It then deletes all matching rows from both `items` and `contents` inside a single Dexie read-write transaction. If the active file was inside the deleted branch, the editor resets cleanly and navigates to the nearest surviving parent.
+- **Single-flight initialization:** React 19 StrictMode runs mount effects twice during development. A module-level `initPromise` variable in `use-workspace-store.ts` caches the initial database seed, preventing duplicate `bulkAdd` calls from throwing errors on initial load.
