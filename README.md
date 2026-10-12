@@ -1,4 +1,4 @@
-# Filebase
+# Filo
 
 An AI-powered workspace for creating rich documents, organizing files, and collaborating in real time with a WYSIWYG editor. **Currently under active development.**
 
@@ -7,8 +7,8 @@ An AI-powered workspace for creating rich documents, organizing files, and colla
 Clone the repository and install dependencies. pnpm is the primary package manager for this repo, but npm and yarn work as well.
 
 ```bash
-git clone https://github.com/Gazi2050/Filebase.git
-cd Filebase
+git clone https://github.com/Gazi2050/Filo.git
+cd Filo
 pnpm install
 pnpm run dev
 ```
